@@ -6,6 +6,9 @@ const Products=require('../db').Products
 route.use('/admin',require('./admin'))
 
 
+route.use('/chat',require('./chat'))
+
+
 route.get('/login',(req,res)=>{
     res.render('login')
 })

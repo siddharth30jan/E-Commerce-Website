@@ -1,7 +1,9 @@
 const route=require('express').Router()
 const Products=require('../db').Products
 
-
+route.get('/chat',(req,res)=>{
+    res.render('admin_chat')
+})
 route.get('/showProducts',(req,res)=>{
     if(req.user)
     {
